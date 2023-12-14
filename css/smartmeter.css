@@ -1,0 +1,953 @@
+.top_bar{
+    display: flex;
+    /* position:static; */
+    width: 1890px;
+    height: 100px;
+    background-color:deeppink;
+    box-shadow: 1px 5px 5px ;
+    margin: auto;
+}
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    position: relative;
+    top: 15px;
+    margin-left: 50px;  
+}
+
+.connect{
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    left: 650px;
+    height: 40px;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px; 
+    
+}
+.connect #label_clientID{
+    margin-top: 5px;
+   margin-left: 5px;
+   font-weight: bold;
+   color: aliceblue;
+   /* float: left; */
+}
+.connect .button #box_clientID{
+    /* position: relative; */
+    margin-left: 2px;
+    padding: 8px;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black; 
+    text-align: center;
+    border: 1.5px black solid;
+    border-radius: 15px;
+    
+}
+/* .connect #btn_connect{
+    margin-left: 5px;r
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black; 
+    text-align: center;
+    border: 1.5px black solid;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+    background-color:darkgray;
+} */
+
+
+.connect #btn_connect {
+    
+    /* margin-left: 10px; */
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin-left: 5px;
+    outline: none;
+    overflow: visible;
+    padding: 9px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 150px;
+}
+  
+.connect #btn_connect:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+  
+.connect #btn_connect:main,
+.connect #btn_connect:focus {
+    user-select: auto;
+}
+  
+.connect #btn_connect:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+  
+.connect #btn_connect:disabled {
+    cursor: auto;
+}
+  
+.connect #btn_connect:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+/* ------------------MIDLE------------------ */
+
+.contain{
+    width: 1220px;
+    height: 822.5px;
+    position: relative;
+    display: block;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    /* background-color: fuchsia; */
+}
+
+/* -----DATA----- */
+
+.contain .data{
+    width: 1220px;
+    height: 350px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color:darkgrey;
+    border-radius: 20px;
+    border: 1px black solid;
+    box-shadow: 1px 5px 5px ;
+}
+
+/* -----DATA CONSUMSION----- */
+
+.contain .data h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: aliceblue;
+}
+.total_consumsion {
+    height: 230px;
+    width: 1220px;
+}
+
+/* energy */
+
+.total_energy{
+    width: 610px;
+    height: 100%;
+    background-color:darkgrey;
+    float: left;
+    color: aliceblue;
+}
+.total_energy #label_energy{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    margin: 30px 0px 0px 60px;
+}
+#box_energy{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 150px;
+    padding: 15px;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 350px;
+}
+#label_energy_unit{
+    margin-left: 5px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+
+/* water */
+
+.total_water{
+    width: 610px;
+    height: 100%;
+    background-color:darkgrey;
+    float: left;
+    color: aliceblue;
+}
+.total_water #label_water{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    margin: 30px 0px 0px 60px;
+}
+#box_water{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    /* position: relative;
+    display: flex; */
+    margin-top: 20px;
+    margin-left: 150px;
+    padding: 15px;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 350px;
+}
+#label_water_unit{
+    margin-left: 5px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+/* -------Customer------- */
+
+.contain .custom{
+    width: 1220px;
+    height: 417.5px;
+    margin-top: 20px;
+    display: flex;
+    /* position: absolute; */
+    /* background-color: blue; */
+}
+
+/* CUSTOMER1 */
+
+.contain .custom .custom1{
+    width: 398px;
+    height: 420px;
+    background-color:darkgrey;
+    float: left;
+    padding-top: 15px;
+    border: 1px black solid;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px ;
+}
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22.5px;
+    font-weight: bold;
+    position: relative;
+    color: aliceblue;
+}
+.cus_name{
+    margin-left: 15px;
+}
+.cus_Id{
+    margin-left: 130px;
+}
+
+#cus_energy{
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+#cus_power{
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+#box_cus_power1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 30px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#cus_voltage{
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+#box_cus_voltage1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#cus_current{
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+#box_cus_current1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#cus_water{
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+#cus_usage{
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+#box_cus_usage1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 45px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+#cus_unit{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 5px;
+    color: aliceblue;
+}
+
+.button1{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.button1 #label_electrical1_button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.button1 #electrical1_button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 9px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 25%;
+}
+  
+.button1 #electrical1_button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button1 #electrical1_button:main,
+  .button1 #electrical1_button:focus {
+    user-select: auto;
+  }
+  
+  .button1 #electrical1_button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button1 #electrical1_button:disabled {
+    cursor: auto;
+  }
+  
+  .button1 #electrical1_button:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+
+.button1 #label_water1_button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+.button1 #water1_button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.button1 #water1_button{
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    border: 1.5px black solid;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    background-color:green;
+}
+
+.button1 #water1_button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 9px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 25%;
+  }
+  
+  .button1 #water1_button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button1 #water1_button:main,
+  .button1 #water1_button:focus {
+    user-select: auto;
+  }
+  
+  .button1 #water1_button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button1 #water1_button:disabled {
+    cursor: auto;
+  }
+  
+  .button1 #water1_button:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
+
+
+
+/* CUSTOMER2 */
+
+.contain .custom .custom2{
+    width: 398px;
+    height: 420px;
+    background-color:darkgrey;
+    float: left;
+    padding-top: 15px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 1px 5px 5px ;
+}
+
+#box_cus_power2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 30px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#box_cus_voltage2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#box_cus_current2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#box_cus_usage2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 45px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.button2{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.button2 #label_electrical2_button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.button2 #electrical2_button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 9px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 25%;
+}
+  
+  .button2 #electrical2_button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button2 #electrical2_button:main,
+  .button2 #electrical2_button:focus {
+    user-select: auto;
+  }
+  
+  .button2 #electrical2_button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button2 #electrical2_button:disabled {
+    cursor: auto;
+  }
+  
+  .button2 #electrical2_button:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+
+.button2 #label_water2_button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+.button2 #water2_button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.button2 #water2_button{
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    border: 1.5px black solid;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    background-color:green;
+}
+
+.button2 #water2_button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 9px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 25%;
+  }
+  
+  .button2 #water2_button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button2 #water2_button:main,
+  .button2 #water2_button:focus {
+    user-select: auto;
+  }
+  
+  .button2 #water2_button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button2 #water2_button:disabled {
+    cursor: auto;
+  }
+  
+  .button2 #water2_button:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
+
+/* CUSTOMER3 */
+
+.contain .custom .custom3{
+    width: 398px;
+    height: 420px;
+    background-color:darkgrey;
+    float: left;
+    padding-top: 15px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 1px 5px 5px ;
+}
+
+#box_cus_power3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 30px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#box_cus_voltage3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#box_cus_current3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#box_cus_usage3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-left: 45px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.button3{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.button3 #label_electrical3_button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+.button3 #electrical3_button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 9px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 25%;
+  }
+  
+  .button3 #electrical3_button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button3 #electrical3_button:main,
+  .button3 #electrical3_button:focus {
+    user-select: auto;
+  }
+  
+  .button3 #electrical3_button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button3 #electrical3_button:disabled {
+    cursor: auto;
+  }
+  
+  .button3 #electrical3_button:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
+
+.button3 #label_water3_button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+
+.button3 #water3_button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 9px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 25%;
+  }
+  
+  .button3 #water3_button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button3 #water3_button:main,
+  .button3 #water3_button:focus {
+    user-select: auto;
+  }
+  
+  .button3 #water3_button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button3 #water3_button:disabled {
+    cursor: auto;
+  }
+  
+  .button3 #water3_button:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
