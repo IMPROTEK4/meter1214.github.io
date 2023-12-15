@@ -93,23 +93,22 @@ function onMessageArrived(message) {
       document.getElementById('box_cus_voltage1').value = values[3] || '';
       document.getElementById('box_cus_current1').value = values[4] || '';
       document.getElementById('box_cus_usage1').value = values[5] || '';
-    
+    }
     
     // Display Custormer 2
-   
+    if (values[0]=='data'){
       document.getElementById('box_cus_power2').value = values[7] || '';
       document.getElementById('box_cus_voltage2').value = values[8] || '';
       document.getElementById('box_cus_current2').value = values[9] || '';
       document.getElementById('box_cus_usage2').value = values[10] || '';
-    
+    }
 
     // Display Custormer 3
-    
+    if (values[0]=='data'&&values[11]=='c3'){
       document.getElementById('box_cus_power3').value = values[12] || '';
       document.getElementById('box_cus_voltage3').value = values[13] || '';
       document.getElementById('box_cus_current3').value = values[14] || '';
       document.getElementById('box_cus_usage3').value = values[15] || '';
-    
     }
 
     // Total Energy
