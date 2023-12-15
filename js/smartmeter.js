@@ -89,33 +89,34 @@ function onMessageArrived(message) {
 
     // Display Custormer 1
     if (values[0]=='data'&&values[1]=='c1'){
-      document.getElementById('box_cus_power1').value = values[1] || '';
-      document.getElementById('box_cus_voltage1').value = values[2] || '';
-      document.getElementById('box_cus_current1').value = values[3] || '';
-      document.getElementById('box_cus_water1').value = values[4] || '';
-    }
+      document.getElementById('box_cus_power1').value = values[2] || '';
+      document.getElementById('box_cus_voltage1').value = values[3] || '';
+      document.getElementById('box_cus_current1').value = values[4] || '';
+      document.getElementById('box_cus_usage1').value = values[5] || '';
+    
     
     // Display Custormer 2
-    else if (values[0]=='data'&&values[5]=='c2'){
-      document.getElementById('box_cus_power2').value = values[6] || '';
-      document.getElementById('box_cus_voltage2').value = values[7] || '';
-      document.getElementById('box_cus_current2').value = values[8] || '';
-      document.getElementById('box_cus_water2').value = values[9] || '';
-    }
+   
+      document.getElementById('box_cus_power2').value = values[7] || '';
+      document.getElementById('box_cus_voltage2').value = values[8] || '';
+      document.getElementById('box_cus_current2').value = values[9] || '';
+      document.getElementById('box_cus_usage2').value = values[10] || '';
+    
 
     // Display Custormer 3
-    else if (values[0]=='data'&&values[10]=='c3'){
-      document.getElementById('box_cus_power3').value = values[11] || '';
-      document.getElementById('box_cus_voltage3').value = values[12] || '';
-      document.getElementById('box_cus_current3').value = values[13] || '';
-      document.getElementById('box_cus_water3').value = values[14] || '';
+    
+      document.getElementById('box_cus_power3').value = values[12] || '';
+      document.getElementById('box_cus_voltage3').value = values[13] || '';
+      document.getElementById('box_cus_current3').value = values[14] || '';
+      document.getElementById('box_cus_usage3').value = values[15] || '';
+    
     }
 
     // Total Energy
-    document.getElementById('box_energy').value = Number(values[1])+Number(values[6])+Number(values[11]);
+    document.getElementById('box_energy').value = Number(values[2])+Number(values[7])+Number(values[12]);
 
     // Total Water
-    document.getElementById('box_water').value = Number(values[4])+Number(values[9])+Number(values[14]);
+    document.getElementById('box_water').value = Number(values[5])+Number(values[10])+Number(values[15]);
     
 
     // -----------Status---------
